@@ -1,0 +1,16 @@
+name: "Tarea"
+description: "action de tarea"
+inputs:
+  edad:
+    description: "Edad de la persona"
+    required: true
+  name:
+    description: "Nombre de la persona"
+    required: true
+  apellido:
+    description: "Apellido de la persona"
+    required: true
+runs:
+  using: "node20"
+  main: "dist/index.js"
+
