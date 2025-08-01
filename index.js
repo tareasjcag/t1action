@@ -6,6 +6,7 @@ try {
     const edadInput = core.getInput('edad');
     const apellido = core.getInput('apellido');
 
+
     // --- Validar y convertir la edad ---
     const edad = parseInt(edadInput, 10);
     if (isNaN(edad) || edad < 0) {
@@ -57,6 +58,10 @@ try {
     // --- 3. Imprimir el mensaje final ---
     const mensaje = `${name} ${apellido} nació el 29 de febrero del año ${anioNacimiento} y cumplira 100 años el 29 de febrero de ${anioCentenario}`;
     console.log(mensaje);
+
+
+    // --- Establecer la salida ---
+    core.setOutput('multiplicacion', edad * 100); // Ejemplo de salida, puedes cambiarlo según tus necesidade
 
 } catch (error) {
     core.setFailed(error.message);

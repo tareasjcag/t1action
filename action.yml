@@ -10,6 +10,10 @@ inputs:
   apellido:
     description: "Apellido de la persona"
     required: true
+
+outputs:
+  multiplicacion:
+    description: "Multiplicacion"
 runs:
   using: "node20"
   main: "dist/index.js"
